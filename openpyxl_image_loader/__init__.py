@@ -4,4 +4,4 @@ __version__ = '1.0.1'
 __author__ = 'Mauricio Chavez Olea <mauriciochavez@ciencias.unam.mx>'
 __all__ = ['SheetImageLoader']
 
-from sheet_image_loader import SheetImageLoader  # NOQA
+from openpyxl_image_loader.sheet_image_loader import SheetImageLoader  # NOQA

@@ -6,7 +6,7 @@ README = (BASE_DIR / 'README.md').read_text()
 
 setup(
     name='openpyxl-image-loader',
-    version='1.0.1',
+    version='1.0.3',
     description='Openpyxl wrapper that gets images from cells',
     long_description=README,
     long_description_content_type='text/markdown',

@@ -19,13 +19,13 @@ sheet = wb['required_sheet']
 # Put your sheet in the loader
 image_loader = SheetImageLoader(sheet)
 
-# And get image from cell
+# And get image from specified cell
 image = image_loader.get('A3')
 
-# image now is a Pillow image, so you can do the following
+# Image now is a Pillow image, so you can do the following
 image.show()
 
-# You cal also ask if there's a image in a cell
+# Ask if there's an image in a cell
 if image_loader.image_in('A4):
     print("Got it!")
 

@@ -4,7 +4,7 @@ Openpyxl wrapper that gets images from cells
 
 ## Requirements
 
-* [openpyxl](https://pypi.org/project/openpyxl/)
+- [openpyxl](https://pypi.org/project/openpyxl/)
 
 ## Usage
 
@@ -26,7 +26,7 @@ image = image_loader.get('A3')
 image.show()
 
 # Ask if there's an image in a cell
-if image_loader.image_in('A4):
+if image_loader.image_in('A4'):
     print("Got it!")
 
 ```

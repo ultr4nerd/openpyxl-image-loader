@@ -10,10 +10,12 @@ from PIL import Image
 
 class SheetImageLoader:
     """Loads all images in a sheet"""
-    _images = {}
 
     def __init__(self, sheet):
         """Loads all sheet images"""
+        
+        self._images = {}
+        
         sheet_images = sheet._images
         for image in sheet_images:
             row = image.anchor._from.row + 1

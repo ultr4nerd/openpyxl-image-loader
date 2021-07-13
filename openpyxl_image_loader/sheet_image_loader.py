@@ -20,6 +20,8 @@ class SheetImageLoader:
         for image in sheet_images:
             row = image.anchor._from.row + 1
             col = string.ascii_uppercase[image.anchor._from.col]
+            if self._images.get(f'{col}{row}'):
+                raise ValueError(f"Cell {col}{row} More than one image.")
             self._images[f'{col}{row}'] = image._data
 
     def image_in(self, cell):

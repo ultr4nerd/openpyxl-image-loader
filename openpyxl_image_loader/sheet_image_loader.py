@@ -7,6 +7,7 @@ import string
 
 from PIL import Image
 
+excel_col_name = lambda n: '' if n <= 0 else excel_col_name((n - 1) // 26) + chr((n - 1) % 26 + ord('A'))
 
 class SheetImageLoader:
     """Loads all images in a sheet"""
@@ -19,7 +20,7 @@ class SheetImageLoader:
         sheet_images = sheet._images
         for image in sheet_images:
             row = image.anchor._from.row + 1
-            col = string.ascii_uppercase[image.anchor._from.col]
+            col = excel_col_name( image.anchor._from.col )
             self._images[f'{col}{row}'] = image._data
 
     def image_in(self, cell):

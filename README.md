@@ -5,6 +5,7 @@ Openpyxl wrapper that gets images from cells
 ## Requirements
 
 - [openpyxl](https://pypi.org/project/openpyxl/)
+- [Pillow](https://pypi.org/project/Pillow/)
 
 ## Usage
 

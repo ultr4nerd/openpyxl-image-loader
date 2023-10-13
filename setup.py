@@ -21,5 +21,5 @@ setup(
     ],
     packages=['openpyxl_image_loader'],
     include_package_data=True,
-    install_requires=['Pillow', ],
+    install_requires=['Pillow', 'openpyxl'],
 )
